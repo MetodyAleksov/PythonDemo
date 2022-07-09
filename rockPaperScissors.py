@@ -22,6 +22,7 @@ while(playerChoice != "quit"):
             or (playerChoice.lower() == "papper" and computerChoice.lower() == "scissors")
             or (playerChoice.lower() == "scissors" and computerChoice.lower() == "rock")):
             playerWon = False
+            
         if playerWon:
             playerWins += 1
             print("Player wins with a choice of", playerChoice.upper(), "and computer choice of", computerChoice.upper())
