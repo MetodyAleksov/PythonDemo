@@ -5,7 +5,7 @@ APP_ID = "ctH2DqNEoJlxxE7DDpNYIQ"
 APP_SECRET = "j-rcdLWTQouUZ_hSARl39HWWG-hMAA"
     
 base_url = 'https://www.reddit.com/'
-data = {'grant_type': 'password','username': "teddy5760", "password": "-"}
+data = {'grant_type': 'password','username': "teddy5760", "password": "metodi2003"}
 
 reddit = praw.Reddit(
     client_id=APP_ID,
@@ -18,6 +18,6 @@ reddit = praw.Reddit(
 subreddit = input("Choose a subreddit to display: ")
 
 i = 1
-for submission in reddit.subreddit('subreddit').new(limit=5):
+for submission in reddit.subreddit(subreddit).new(limit=5):
     print(str(i) + ".", submission.title)
     i += 1
