@@ -15,7 +15,9 @@ reddit = praw.Reddit(
     username="teddy5760"
 )
 
+subreddit = input("Choose a subreddit to display: ")
+
 i = 1
-for submission in reddit.subreddit('mountainbiking').new(limit=5):
+for submission in reddit.subreddit('subreddit').new(limit=5):
     print(str(i) + ".", submission.title)
     i += 1
