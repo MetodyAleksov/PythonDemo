@@ -1,4 +1,5 @@
-arr = ["Left", "Right", "Center"]
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-for i in range(len(arr)):
-    print(arr[i])
+sliced = x[0:9:2]
+
+print(x, sliced)
