@@ -5,7 +5,7 @@ APP_ID = "ctH2DqNEoJlxxE7DDpNYIQ"
 APP_SECRET = "j-rcdLWTQouUZ_hSARl39HWWG-hMAA"
     
 base_url = 'https://www.reddit.com/'
-data = {'grant_type': 'password','username': "teddy5760", "password": "metodi2003"}
+data = {'grant_type': 'password','username': "teddy5760", "password": "-"}
 
 reddit = praw.Reddit(
     client_id=APP_ID,
