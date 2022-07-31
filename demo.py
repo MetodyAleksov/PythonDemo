@@ -1,8 +1,14 @@
-x = int(input())
-y = int(input())
-z = int(input())
 n = int(input())
+arr = list(map(int, input().split()))
 
-lists = [[a, b, c] for a in range(0, x + 1) for b in range(0, y + 1) for c in range(0, z + 1) if (a + b + c != n)]
+max_value = max(arr)
 
-print(lists)
+item_occurences = {}
+
+for item in arr:
+    if(item != max_value):
+        item_occurences[item] = max_value - item
+
+runner_up = min(item_occurences, key=lambda x: item_occurences[x])
+
+print()
