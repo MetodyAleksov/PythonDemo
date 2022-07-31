@@ -1,5 +1,8 @@
-x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+x = int(input())
+y = int(input())
+z = int(input())
+n = int(input())
 
-sliced = x[0:9:2]
+lists = [[a, b, c] for a in range(0, x + 1) for b in range(0, y + 1) for c in range(0, z + 1) if (a + b + c != n)]
 
-print(x, sliced)
+print(lists)
