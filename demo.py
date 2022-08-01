@@ -1,14 +1,10 @@
 n = int(input())
-arr = list(map(int, input().split()))
+student_marks = {}
+for _ in range(n):
+    name, *line = input().split()
+    scores = list(map(float, line))
+    student_marks[name] = scores
+query_name = input()
 
-max_value = max(arr)
-
-item_occurences = {}
-
-for item in arr:
-    if(item != max_value):
-        item_occurences[item] = max_value - item
-
-runner_up = min(item_occurences, key=lambda x: item_occurences[x])
-
-print()
+if query_name in student_marks:
+    print("%.2f" % float(sum(student_marks[query_name])/len(student_marks[query_name])))
